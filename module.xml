@@ -1,0 +1,29 @@
+<module>
+        <rawname>qstatstab</rawname>
+        <name>Queue Stats Panel</name>
+        <repo>standard</repo>
+        <version>15.0.0.2</version>
+        <publisher>pbx-profi.ru</publisher>
+        <license>GPLv3</license>
+        <description>
+                Provides a Module Menu that launches the Queue Stats Panel. Requires queue-stats to be installed &lt;br/&gt;
+                https://asterisk-pbx.ru/wiki/soft/call_center/asternic-call-center-stats
+        </description>
+        <changelog>
+                *15.0.0.2* Change category to Reports
+                *15.0.0.1* First release
+        </changelog>
+        <category>Reports</category>
+        <menuitems>
+                <cdr
+                        category="Reports"
+                        href="/queue-stats"
+                        target="qstats"
+                        access="all"
+                        requires_auth="false"
+                        >Queue Stats</cdr>
+        </menuitems>
+        <supported>
+                <version>2.11</version>
+        </supported>
+</module>
